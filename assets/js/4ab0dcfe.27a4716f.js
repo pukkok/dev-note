@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdev_note=self.webpackChunkdev_note||[]).push([[7912],{6761:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/dev-note/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
