@@ -14,16 +14,12 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  url: 'https://pukkok.github.io',
+  baseUrl: '/dev-note/', // <- 너의 레포 이름과 맞춰야 해
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'pukkok', // 깃허브 사용자명
+  projectName: 'dev-note',    // 레포 이름
+  deploymentBranch: 'gh-pages', // 기본값이지만 명시
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
