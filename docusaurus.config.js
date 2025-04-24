@@ -20,7 +20,8 @@ const config = {
   organizationName: 'pukkok', // 깃허브 사용자명
   projectName: 'dev-note',    // 레포 이름
   deploymentBranch: 'gh-pages', // 기본값이지만 명시
-
+  trailingSlash: true,
+  
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
