@@ -49,16 +49,16 @@ const config = {
         editUrl: 'https://github.com/pukkok/dev-note/edit/main/project/',
       },
     ],
-    // [
-    //   '@docusaurus/plugin-content-docs',
-    //   {
-    //     id: 'study',
-    //     path: 'study',
-    //     routeBasePath: 'study',
-    //     sidebarPath: require.resolve('./sidebarsStudy.js'),
-    //     editUrl: 'https://github.com/pukkok/dev-note/edit/main/study/',
-    //   },
-    // ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'study',
+        path: 'study',
+        routeBasePath: 'study',
+        sidebarPath: require.resolve('./sidebarsStudy.js'),
+        editUrl: 'https://github.com/pukkok/dev-note/edit/main/study/',
+      },
+    ],
   ],
 
   themeConfig: {
@@ -71,7 +71,7 @@ const config = {
       },
       items: [
         { to: '/project/img-ttukttakki/intro', label: '프로젝트', position: 'left' },
-
+        { to: '/study/nextjs/routing', label: '스터디', position: 'left' },
         { href: 'https://github.com/pukkok/', label: 'GitHub', position: 'right' },
       ],
     },
