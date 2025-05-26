@@ -9,13 +9,13 @@ module.exports = {
         'img-ttukttakki/challenges',
       ],
     },
-    // {
-    //   type: 'category',
-    //   label: 'React Merge Table',
-    //   items: [
-    //     'react-merge-table/intro',
-    //     'react-merge-table/design',
-    //   ],
-    // },
+    {
+      type: 'category',
+      label: 'React Merge Table',
+      items: [
+        'react-merge-table/core',
+        // 'react-merge-table/smart'
+      ],
+    },
   ],
 };
