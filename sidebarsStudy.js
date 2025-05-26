@@ -7,6 +7,7 @@ module.exports = {
       items: [
         'nextjs/routing',
         'nextjs/enviroment',
+        'nextjs/apiProxy',
       ],
     },
   ],
