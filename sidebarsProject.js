@@ -17,5 +17,13 @@ module.exports = {
         // 'react-merge-table/smart'
       ],
     },
+    {
+      type: 'category',
+      label: 'Streamo',
+      items: [
+        'streamo/intro',
+        'streamo/upload'
+      ],
+    },
   ],
 };
