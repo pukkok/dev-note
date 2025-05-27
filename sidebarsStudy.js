@@ -10,5 +10,12 @@ module.exports = {
         'nextjs/apiProxy',
       ],
     },
+    {
+      type: 'category',
+      label: 'github',
+      items: [
+        'github/githubPages404redirect',
+      ],
+    },
   ],
 };
