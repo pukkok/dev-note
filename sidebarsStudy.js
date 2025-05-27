@@ -14,8 +14,27 @@ module.exports = {
       type: 'category',
       label: 'github',
       items: [
+        'github/permissionError',
+        'github/started',
+        'github/advanced',
         'github/githubPages404redirect',
       ],
+    },
+    {
+      type: 'category',
+      label: 'javascript',
+      items: [
+        'javascript/functionsIntro',
+        'javascript/functionsPerspective'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'node.js',
+      items: [
+        'nodejs/fileGeneration',
+        'nodejs/started',
+      ]
     },
     {
       type: 'category',
@@ -34,6 +53,14 @@ module.exports = {
             'python/restful/training-3',
         ],
       },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'etc',
+      items: [
+        'etc/computerBasic',
+        'etc/IDE',
       ],
     },
   ],
