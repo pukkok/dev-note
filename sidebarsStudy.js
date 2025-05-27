@@ -19,9 +19,35 @@ module.exports = {
         'javascript/functions_perspective',
         'javascript/array_object_copy',
         'javascript/object_essentials',
+        {
+          type: 'category',
+          label: 'window 객체',
+          items: [
+            'javascript/window_object/basic',
+            'javascript/window_object/training',
+          ],
+        },
         'javascript/constructor_functions',
         'javascript/private_public_property',
         'javascript/prototype_extends_instanceof',
+        {
+          type: 'category',
+          label: '함수 리턴과 jsdocs',
+          items: [
+            'javascript/function_return_jsdocs/basic',
+            'javascript/function_return_jsdocs/training',
+            'javascript/function_return_jsdocs/extension',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'for 문',
+          items: [
+            'javascript/for_loop/basic',
+            'javascript/for_loop/training',
+          ],
+        },
+        'javascript/callback_functions',
       ]
     },
     {
@@ -31,6 +57,7 @@ module.exports = {
         'github/permission_error',
         'github/started',
         'github/advanced',
+        'github/case_conflict',
         'github/github_pages_404_redirect',
       ],
     },
@@ -40,6 +67,18 @@ module.exports = {
       items: [
         'nodejs/file_generation',
         'nodejs/started',
+        'nodejs/sync_async_fs',
+        'nodejs/html_template_basic',
+        'nodejs/static_server_exec',
+        {
+          type: 'category',
+          label: 'SSR 서버 이해(with. handlebars)',
+          items: [
+            'nodejs/handlebars/first',
+            'nodejs/handlebars/second',
+            'nodejs/handlebars/third',
+          ]
+        }
       ]
     },
     {
@@ -50,15 +89,15 @@ module.exports = {
         'python/run_error_1',
         'python/venv',
         'python/initpy_pycache',
-          {
+        {
           type: 'category',
           label: 'restful API 구현',
           items: [
             'python/restful/training_1',
             'python/restful/training_2',
             'python/restful/training_3',
-        ],
-      },
+          ],
+        },
       ],
     },
     {
@@ -67,6 +106,10 @@ module.exports = {
       items: [
         'etc/computer_basic',
         'etc/IDE',
+        'etc/react_without_cra_setting',
+        'etc/react_ts_setting',
+        'etc/git_and_github_basics_for_developers',
+        'etc/mongoDB_powershell'
       ],
     },
   ],
