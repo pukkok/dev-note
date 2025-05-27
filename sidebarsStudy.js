@@ -17,5 +17,24 @@ module.exports = {
         'github/githubPages404redirect',
       ],
     },
+    {
+      type: 'category',
+      label: 'python',
+      items: [
+        'python/install',
+        'python/runError-1',
+        'python/venv',
+        'python/initPyAndCachePy',
+          {
+          type: 'category',
+          label: 'restful API 구현',
+          items: [
+            'python/restful/training-1',
+            'python/restful/training-2',
+            'python/restful/training-3',
+        ],
+      },
+      ],
+    },
   ],
 };
