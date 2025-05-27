@@ -46,7 +46,7 @@ const config = {
         path: 'project',
         routeBasePath: 'project',
         sidebarPath: require.resolve('./sidebarsProject.js'),
-        editUrl: 'https://github.com/pukkok/dev-note/edit/main/project/',
+        editUrl: 'https://github.com/pukkok/dev-note/edit/main/',
       },
     ],
     [
@@ -56,7 +56,7 @@ const config = {
         path: 'study',
         routeBasePath: 'study',
         sidebarPath: require.resolve('./sidebarsStudy.js'),
-        editUrl: 'https://github.com/pukkok/dev-note/edit/main/study/',
+        editUrl: 'https://github.com/pukkok/dev-note/edit/main/',
       },
     ],
   ],
