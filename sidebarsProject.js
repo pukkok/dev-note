@@ -7,6 +7,7 @@ module.exports = {
       items: [
         'img-ttukttakki/intro',
         'img-ttukttakki/challenges',
+        'img-ttukttakki/update-01',
       ],
     },
     {
@@ -23,6 +24,23 @@ module.exports = {
       items: [
         'streamo/intro',
         'streamo/upload'
+      ],
+    },
+    {
+      type: 'category',
+      label: '영림 리뉴얼',
+      items: [
+        'younglim-renewal/intro',
+        'younglim-renewal/design',
+        'younglim-renewal/implementation',
+        'younglim-renewal/retrospective',
+      ],
+    },
+    {
+      type: 'category',
+      label: '하이트 웹디자인',
+      items: [
+        'hite/intro',
       ],
     },
   ],
