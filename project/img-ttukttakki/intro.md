@@ -1,5 +1,6 @@
 # 시작하기
 
+### [👉 바로가기](https://pukkok.github.io/img-ttukttakki)
 > 이미지를 도형으로 자르고, 용지 기준으로 나누고, 저장까지 뚝딱!
 
 ---
@@ -46,11 +47,3 @@
 - Canvas API
 - JSZip + FileSaver
 - PDFLib
-
----
-
-## 데모 사용처
-
-👉 [배포 링크 바로가기](https://pukkok.github.io/img-ttukttakki)
-
----
