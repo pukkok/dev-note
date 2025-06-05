@@ -69,7 +69,6 @@ module.exports = {
         'nodejs/started',
         'nodejs/sync_async_fs',
         'nodejs/html_template_basic',
-        'nodejs/static_server_exec',
         {
           type: 'category',
           label: 'SSR 서버 이해(with. handlebars)',
@@ -77,6 +76,16 @@ module.exports = {
             'nodejs/handlebars/first',
             'nodejs/handlebars/second',
             'nodejs/handlebars/third',
+          ]
+        },
+        'nodejs/static_server_exec',
+        {
+          type: 'category',
+          label: '바닐라 http 서버 구현',
+          items: [
+            'nodejs/vanilla-http-server/vanilla-http-server',
+            'nodejs/vanilla-http-server/html-template-generator',
+            'nodejs/vanilla-http-server/dom-rendering-with-json',
           ]
         }
       ]
