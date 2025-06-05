@@ -59,6 +59,16 @@ const config = {
         editUrl: 'https://github.com/pukkok/dev-note/edit/main/',
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'labs',
+        path: 'labs',
+        routeBasePath: 'labs',
+        sidebarPath: require.resolve('./sidebarsLab.js'),
+        editUrl: 'https://github.com/pukkok/dev-note/edit/main/',
+      },
+    ],
   ],
 
   themeConfig: {
@@ -72,6 +82,7 @@ const config = {
       items: [
         { to: '/project/img-ttukttakki/intro', label: '프로젝트', position: 'left' },
         { to: '/study/nextjs/routing', label: '스터디', position: 'left' },
+        { to: '/labs/sudoku', label: '연구소', position: 'left' },
         { href: 'https://github.com/pukkok/', label: 'GitHub', position: 'right' },
       ],
     },

@@ -27,6 +27,10 @@ module.exports = {
       ],
     },
     {
+      type: 'doc',
+      id: 'cron-job'
+    },
+    {
       type: 'category',
       label: '영림 리뉴얼',
       items: [
@@ -37,11 +41,8 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: '하이트 웹디자인',
-      items: [
-        'hite/intro',
-      ],
+      type: 'doc',
+      id: 'hite'
     },
   ],
 };
