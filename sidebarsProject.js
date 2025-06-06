@@ -12,6 +12,15 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'pk-icons',
+      items: [
+        'pk-icons/intro',
+        'pk-icons/icon-type-guide',
+        'pk-icons/icon-management-indexing',
+      ]
+    },
+    {
+      type: 'category',
       label: 'React Merge Table',
       items: [
         'react-merge-table/core',
