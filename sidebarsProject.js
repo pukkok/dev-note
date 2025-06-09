@@ -32,7 +32,11 @@ module.exports = {
       label: 'Streamo',
       items: [
         'streamo/intro',
-        'streamo/upload'
+        'streamo/route-guard',
+        'streamo/api-setup',
+        'streamo/state-management',
+        'streamo/upload',
+        'streamo/skeleton-cls',
       ],
     },
     {
