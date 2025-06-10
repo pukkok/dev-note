@@ -12,15 +12,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'pk-icons',
-      items: [
-        'pk-icons/intro',
-        'pk-icons/icon-type-guide',
-        'pk-icons/icon-management-indexing',
-      ]
-    },
-    {
-      type: 'category',
       label: 'React Merge Table',
       items: [
         'react-merge-table/core',
@@ -38,6 +29,15 @@ module.exports = {
         'streamo/upload',
         'streamo/skeleton-cls',
       ],
+    },
+    {
+      type: 'category',
+      label: 'pk-icons',
+      items: [
+        'pk-icons/intro',
+        'pk-icons/icon-type-guide',
+        'pk-icons/icon-management-indexing',
+      ]
     },
     {
       type: 'doc',
