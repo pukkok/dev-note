@@ -10,6 +10,8 @@ title: 시작하기
 * **크기(size), 스타일(className), 동작 상태(isActive, direction 등) 지원**
 * **가벼운 구조 & 타입 지원(index.d.ts 포함)**
 
+> npm 배포를 없이 사용하려 했으나, (`yarn add github:pukkok/pk-icons`) <br /> 
+> 사용시 Next.js에서 jsx파일을 읽지 못하는 오류로 기본 config 설정없이 사용할 수 없어 npm 배포후 사용중입니다. <br/>
 > 이 라이브러리는 개인 목적이지만, 구조적으로 범용화되어 있어 다른 프로젝트에서도 사용 가능하도록 구성되어 있습니다.
 
 ---
@@ -17,9 +19,9 @@ title: 시작하기
 ## 설치
 
 ```bash
-yarn add github:pukkok/pk-icons
+yarn add pk-icons
 # 또는
-npm install github:pukkok/pk-icons
+npm install pk-icons
 ```
 
 ## 사용 예시
