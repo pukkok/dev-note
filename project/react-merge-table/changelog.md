@@ -11,7 +11,7 @@ title : 업데이트 이력
 * `<MergeTable>`의 `defaultStyle` prop 제거 <br/>
   → 기본적으로 `border-collapse: collapse`와 `width: 100%` 스타일이 항상 적용됩니다.
 * `<MergeTable>`은 `<table>`을 감싸는 얇은 래퍼임을 문서에 명시
-* 📝 `<TableHeader>`, `<TableBody>`는 여전히 `defaultStyle={false}` 사용 가능하며, 해당 내용 문서에 추가
+* `<TableHeader>`, `<TableBody>`는 여전히 `defaultStyle={false}` 사용 가능하며, 해당 내용 문서에 추가
 
 ---
 
