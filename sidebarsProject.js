@@ -32,6 +32,31 @@ module.exports = {
     },
     {
       type: 'category',
+      label: '유치원 모으미',
+      items: [
+        {
+          type: 'category',
+          label: '프론트(React)',
+          items: [
+            'kinder-moumi/frontend/intro',
+            'kinder-moumi/frontend/issue',
+            'kinder-moumi/frontend/merge-table',
+          ]
+        },
+        {
+          type: 'category',
+          label: '백엔드(Express)',
+          items: [
+            'kinder-moumi/backend/auth',
+            'kinder-moumi/backend/upload-customizing',
+            'kinder-moumi/backend/kinder-API',
+            'kinder-moumi/backend/account-model',
+          ]
+        }
+      ]
+    },
+    {
+      type: 'category',
       label: 'pk-icons',
       items: [
         'pk-icons/intro',
