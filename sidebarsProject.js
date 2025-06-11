@@ -15,6 +15,7 @@ module.exports = {
       label: 'React Merge Table',
       items: [
         'react-merge-table/core',
+        'react-merge-table/changelog',
         // 'react-merge-table/smart'
       ],
     },
