@@ -113,6 +113,7 @@ module.exports = {
       type: 'category',
       label: 'etc',
       items: [
+        'etc/my-template',
         'etc/computer_basic',
         'etc/IDE',
         'etc/react_without_cra_setting',
