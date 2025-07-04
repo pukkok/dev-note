@@ -12,6 +12,15 @@ module.exports = {
     },
     {
       type: 'category',
+      label: '폼톡',
+      items: [
+        'formtok/intro',
+        // 'react-merge-table/changelog',
+        // 'react-merge-table/smart'
+      ],
+    },
+    {
+      type: 'category',
       label: 'React Merge Table',
       items: [
         'react-merge-table/core',
