@@ -35,7 +35,7 @@ git config --global user.email "krystalgggg@gmail.com"
 - 효과: 
   - 이 설정 후 커밋 명령이 정상 작동하여 커밋 실패가 없어짐.
 
----
+<br/>
 
 ### 2. HTTPS 인증 관련 문제와 혼란
 - 에러 메시지:
@@ -56,7 +56,7 @@ fatal: could not read Password for 'https://pukkok@github.com': No such device o
   - 워크플로우 환경변수로 `GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}` 설정
   - 그러나 여전히 같은 인증 오류 발생
 
----
+<br/>
 
 ### 3. SSH 키 인증 방식으로 전환
 - 상황 :
@@ -76,9 +76,7 @@ ssh-keygen -t ed25519 -C "krystalgggg@gmail.com"
 > 전체를 복사해서 사용하면 된다.
 
 - GitHub 등록:
-
   - 공개키(id_ed25519.pub) 내용을 복사해서 GitHub 레포지토리 Settings > Deploy keys 또는 SSH and GPG keys에 붙여넣음
-
   - 개인키(`id_ed25519`) 전체 내용을 GitHub Secrets에 `ACTIONS_DEPLOY_KEY`라는 이름으로 등록함
 
 - 워크플로우 변경:
@@ -89,6 +87,8 @@ ssh-keygen -t ed25519 -C "krystalgggg@gmail.com"
 - 효과:
   - 이제 git push 시 SSH 인증으로 원활히 동작
   - 이전 HTTPS 방식에서 겪던 비밀번호 읽기 실패 문제 완전히 해결
+
+<br/>
 
 ### 4. GitHub Actions 워크플로우 예시
 
@@ -134,6 +134,8 @@ jobs:
         run: yarn auto-deploy
 ```
 
+<br/>
+
 ### 5. 추가 팁 및 주의사항
 
 - 토큰 방식 배포 시:
@@ -144,6 +146,8 @@ jobs:
 - **개인키(비밀키)는 절대 공개하지 말고** `GitHub Secrets`에 안전하게 저장할 것
 - 공개키는 레포지토리 설정(`Deploy keys`)에 등록해야만 권한이 생김
   - title은 크게 문제없다.
+
+---
 
 ### 6. 마무리
 이 문서는 직접 겪은 문제들과 시도했던 해결책, 그리고 **최종 성공한 과정**을 전부 작성함.
