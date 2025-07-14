@@ -13,6 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "pukkok"
+          git config --global user.email "krystalgggg@gamil.com"
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -26,3 +31,4 @@ jobs:
           yarn auto-deploy
         env:
           GIT_USER: pukkok
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
