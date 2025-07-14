@@ -1,5 +1,5 @@
 ---
-title: githubActions를 이용한 gh-pages 배포
+title: githubActions (gh-pages CI/CD)
 ---
 
 #  GitHub Pages 배포 실패 → 성공
@@ -82,7 +82,6 @@ ssh-keygen -t ed25519 -C "krystalgggg@gmail.com"
   - 개인키(`id_ed25519`) 전체 내용을 GitHub Secrets에 `ACTIONS_DEPLOY_KEY`라는 이름으로 등록함
 
 - 워크플로우 변경:
-  - `actions/checkout@v3` 사용 시 `persist-credentials: false` 옵션 추가 (기본 HTTPS 인증 비활성화)
   - `webfactory/ssh-agent@v0.8.1` 액션 추가하여 Secrets의 개인키를 로드해 SSH 에이전트에 등록
   - `Git config`는 이전과 동일하게 유지
   - deploy 스크립트는 **SSH 키 인증**으로 `git push` 수행
@@ -108,21 +107,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false  # HTTPS 토큰 초기화해서 SSH 키 사용 가능하게
 
       - name: Configure Git
         run: |
           git config --global user.name "pukkok"
           git config --global user.email "krystalgggg@gmail.com"
 
-      # --- 직접 세팅할 경우 ---
-      # - name: Setup SSH
-      #   run: |
-      #     mkdir -p ~/.ssh
-      #     echo "${{ secrets.ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
-      #     chmod 600 ~/.ssh/id_ed25519
-      #     ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -148,7 +144,6 @@ jobs:
 - **개인키(비밀키)는 절대 공개하지 말고** `GitHub Secrets`에 안전하게 저장할 것
 - 공개키는 레포지토리 설정(`Deploy keys`)에 등록해야만 권한이 생김
   - title은 크게 문제없다.
-- `persist-credentials: false` 옵션은 꼭 넣어야 HTTPS 기본 토큰을 덮어쓰지 않음
 
 ### 6. 마무리
-이 문서는 내가 직접 겪은 문제들과 시도했던 해결책, 그리고 **최종 성공한 과정**을 전부 자세히 담았다.
+이 문서는 직접 겪은 문제들과 시도했던 해결책, 그리고 **최종 성공한 과정**을 전부 작성함.
