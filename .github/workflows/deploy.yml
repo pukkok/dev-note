@@ -29,6 +29,4 @@ jobs:
       - name: Build and Deploy
         run: |
           yarn auto-deploy
-        env:
-          GIT_USER: pukkok
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
