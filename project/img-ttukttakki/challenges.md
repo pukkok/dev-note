@@ -126,4 +126,24 @@
 
 ---
 
+## 8. fabric.js 6.x의 불안정성과 다운그레이드 결정
+
+<span style={{ color: '#e67e22' }}><strong>문제</strong></span>: 최신 버전인 fabric@6.x에서 다음과 같은 문제점이 발생함
+* preserveObjectStacking 옵션이 정상적으로 작동하지 않음
+* bringToFront, sendToBack 명령이 객체에 따라 무시되거나 순서가 꼬이는 현상 발생
+* 특정 객체가 예기치 않게 이동 불가 상태로 바뀌거나 선택 불가능해짐
+
+<span style={{ color: '#e67e22' }}><strong>해결</strong></span>: 안정성이 검증된 fabric@4.6.0으로 다운그레이드
+* 모든 객체는 customType을 기준으로 분기하여 z-index를 명시적으로 제어
+* 의도한 순서대로 .bringToFront(), .sendToBack() 호출하여 렌더링 순서를 보장
+
+```js
+canvas.getObjects().forEach(obj => {
+  if (obj.customType === 'crop') canvas.bringToFront(obj)
+  if (obj.customType === 'background') canvas.sendToBack(obj)
+})
+```
+
+---
+
 > 이 문서는 지속적으로 개선 중이며, 새로운 문제나 리팩토링 과정이 생길 경우 추가로 정리할 예정입니다.

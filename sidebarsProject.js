@@ -7,7 +7,8 @@ module.exports = {
       items: [
         'img-ttukttakki/intro',
         'img-ttukttakki/challenges',
-        'img-ttukttakki/update-01',
+        'img-ttukttakki/update-010',
+        'img-ttukttakki/update-100',
       ],
     },
     {
