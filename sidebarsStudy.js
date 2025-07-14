@@ -59,6 +59,7 @@ module.exports = {
         'github/advanced',
         'github/case_conflict',
         'github/github_pages_404_redirect',
+        'github/github-action'
       ],
     },
     {
