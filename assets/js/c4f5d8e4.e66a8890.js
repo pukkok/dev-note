@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdev_note=self.webpackChunkdev_note||[]).push([[2634],{9179:(e,t,n)=>{n.r(t),n.d(t,{default:()=>s});var r=n(6347),o=n(4848);function s(){return(0,o.jsx)(r.rd,{to:"/dev-note/project/scroll-space/intro"})}}}]);

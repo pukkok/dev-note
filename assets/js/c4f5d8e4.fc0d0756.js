@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdev_note=self.webpackChunkdev_note||[]).push([[2634],{9179:(t,e,n)=>{n.r(e),n.d(e,{default:()=>k});var r=n(6347),u=n(4848);function k(){return(0,u.jsx)(r.rd,{to:"/dev-note/project/img-ttukttakki/intro"})}}}]);
