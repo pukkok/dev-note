@@ -3,6 +3,19 @@ module.exports = {
   sidebar: [
     {
       type: 'category',
+      label: '스크롤 우주여행',
+      items: [
+        'scroll-space/intro',
+        'scroll-space/clip-path-event',
+        'scroll-space/framer-motion',
+        'scroll-space/y-to-x-event',
+        'scroll-space/half-section',
+        'scroll-space/accel-text',
+        'scroll-space/parallax',
+      ]
+    },
+    {
+      type: 'category',
       label: '이미지 뚝딱기',
       items: [
         'img-ttukttakki/intro',
@@ -16,6 +29,7 @@ module.exports = {
       label: '폼톡',
       items: [
         'formtok/intro',
+        'formtok/route-guard'
         // 'react-merge-table/changelog',
         // 'react-merge-table/smart'
       ],

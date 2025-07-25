@@ -80,7 +80,7 @@ const config = {
         src: 'img/logo.svg',
       },
       items: [
-        { to: '/project/img-ttukttakki/intro', label: '프로젝트', position: 'left' },
+        { to: '/project/scroll-space/intro', label: '프로젝트', position: 'left' },
         { to: '/study/nextjs/routing', label: '스터디', position: 'left' },
         { to: '/labs/sudoku', label: '연구소', position: 'left' },
         { href: 'https://github.com/pukkok/', label: 'GitHub', position: 'right' },
