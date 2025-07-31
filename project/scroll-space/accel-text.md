@@ -18,7 +18,7 @@ title: 가속 텍스트
 ## 핵심 로직 요약
 * 내부 `countRef`로 애니메이션 위치를 관리하며 `requestAnimationFrame`으로 매 프레임마다 위치 갱신
 * 텍스트가 자신의 절반 너비만큼 이동하면 위치 초기화해 무한 반복 효과
-* 스크롤 휠 이벤트(wheel)가 발생하면 위치를 급격히 더 이동해 스크롤에 반응하는 가속 효과 부여
+* 스크롤 이벤트(scroll)가 발생하면 위치를 급격히 더 이동해 스크롤에 반응하는 가속 효과 부여
 
 ```js
 useEffect(() => {
@@ -33,8 +33,8 @@ useEffect(() => {
   const handleScroll = () => {
     countRef.current += 15
   }
-  window.addEventListener('wheel', handleScroll)
-  return () => window.removeEventListener('wheel', handleScroll)
+  window.addEventListener('scroll', handleScroll)
+  return () => window.removeEventListener('scroll', handleScroll)
 }, [])
 ```
 1. `animate` 함수는 계속 호출되며 `countRef`값을 바탕으로 텍스트 위치를 조절
