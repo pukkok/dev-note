@@ -29,6 +29,7 @@ module.exports = {
       label: '폼톡',
       items: [
         'formtok/intro',
+        'formtok/screen-info',
         'formtok/route-guard',
         'formtok/otp'
         // 'react-merge-table/changelog',

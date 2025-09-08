@@ -5,6 +5,9 @@ title: 설문 변경사항 라우팅 가드
 # 설문 변경사항 라우팅 가드
 > 설문조사 작성 중 다른 탭으로 이동하거나 종료시 방어해주는 역할입니다.
 
+### 이미지 미리보기
+![라우팅 가드](/img/formtok/routing-guard.JPG)
+
 ### 1. ModalContainer.jsx
 ```js
 'use client'
